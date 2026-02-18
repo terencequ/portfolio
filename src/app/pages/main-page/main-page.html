@@ -1,0 +1,100 @@
+<nav>
+  <div class="container inner">
+    <h1>Terence's Portfolio</h1>
+    <ul>
+      <li (click)="onScrollToElement(about)">About</li>
+      <li (click)="onScrollToElement(skills)">Skills</li>
+      <li (click)="onScrollToElement(projects)">Projects</li>
+      <li (click)="onScrollToElement(contact)">Contact</li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero container">
+  <h2>Hi, I'm Terence Qu!</h2>
+  <h3>Senior Software Engineer | Principal Architect | Software Team Lead</h3>
+  <p>I'm experienced in all things web dev, including infrastructure, backend, frontend and design. I love everything to do with code.</p>
+  <a (click)="onScrollToElement(projects)" class="btn">View Projects</a>
+</header>
+
+<section #about>
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <div class="avatar"></div>
+      <p>
+        I'm a developer passionate about building performant software and intuitive experiences.
+        I specialize in modern web stacks, cloud architecture, and clean system design.
+        I enjoy solving complex problems, optimizing performance, and learning new technologies.
+        In my spare time, you can see me dabble in game development, and explore the latest trends in software engineering.
+        I'm always excited to connect with fellow developers and collaborate on interesting projects.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section #skills>
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill">JavaScript</div>
+      <div class="skill">TypeScript</div>
+      <div class="skill">Angular</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Microservices</div>
+      <div class="skill">Azure</div>
+      <div class="skill">CI/CD</div>
+      <div class="skill">System Design</div>
+      <div class="skill">C#</div>
+      <div class="skill">ASP.NET</div>
+      <div class="skill">OpenAPI</div>
+      <div class="skill">Swagger</div>
+      <div class="skill">EF Core</div>
+      <div class="skill">Dapper</div>
+      <div class="skill">Unity</div>
+    </div>
+  </div>
+</section>
+
+<section #projects>
+  <div class="container">
+    <h2 class="section-title">Personal Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <h4>Ratatoskr</h4>
+        <p>A roguelike game featuring procedural world generation, unique combat mechanics and survival game elements.</p>
+        <br/>
+        <p><em>Unity (C#)</em></p>
+        <a href="https://codemuncher.itch.io/ratatoskr">View Project →</a>
+      </div>
+
+      <div class="card">
+        <h4>Schedule One - Mixing Tool</h4>
+        <p>A webapp that allows players of the game 'Schedule One' to find optimal combinations of ingredients.</p>
+        <br/>
+        <p><em>Angular + Material UI (Typescript, HTML, SCSS)</em></p>
+        <a href="https://scheduleonemixer.terencequ.com">View Project →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section #contact>
+  <div class="container contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Want to work together or just say hi? Reach out.</p>
+    <div class="socials">
+      <a href="mailto:terence@terencequ.com" target="_blank">Email</a>
+      <a href="https://github.com/terencequ/" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/terence-qu/" target="_blank">LinkedIn</a>
+      <a href="/Terence%20Qu%20CV.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Terence Qu — Built in Angular with HTML, Typescript and SCSS
+</footer>
